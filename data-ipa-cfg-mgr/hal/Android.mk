@@ -1,17 +1,17 @@
-LOCAL_PATH := $(call my-dir)
+#LOCAL_PATH := $(call my-dir)
 
-include $(CLEAR_VARS)
-LOCAL_ARM_MODE := arm
-LOCAL_SRC_FILES := src/CtUpdateAmbassador.cpp \
+#include $(CLEAR_VARS)
+#LOCAL_ARM_MODE := arm
+#LOCAL_SRC_FILES := src/CtUpdateAmbassador.cpp \
                 src/HAL.cpp \
                 src/IpaEventRelay.cpp \
                 src/LocalLogBuffer.cpp \
                 src/OffloadStatistics.cpp \
                 src/PrefixParser.cpp
-LOCAL_C_INCLUDES := $(LOCAL_PATH)/inc
-LOCAL_MODULE := liboffloadhal
-LOCAL_CPP_FLAGS := -Wall -Werror
-LOCAL_SHARED_LIBRARIES := libhwbinder \
+#LOCAL_C_INCLUDES := $(LOCAL_PATH)/inc
+#LOCAL_MODULE := liboffloadhal
+#LOCAL_CPP_FLAGS := -Wall -Werror
+#LOCAL_SHARED_LIBRARIES := libhwbinder \
                         libhidlbase \
                         libhidltransport \
                         liblog \
@@ -23,7 +23,7 @@ LOCAL_SHARED_LIBRARIES := libhwbinder \
                         libhardware \
                         android.hardware.tetheroffload.config@1.0 \
                         android.hardware.tetheroffload.control@1.0
-LOCAL_VENDOR_MODULE := true
-LOCAL_MODULE_PATH_32 := $(TARGET_OUT_VENDOR)/lib
-LOCAL_MODULE_PATH_64 := $(TARGET_OUT_VENDOR)/lib64
-include $(BUILD_SHARED_LIBRARY)
+#LOCAL_VENDOR_MODULE := true
+#LOCAL_MODULE_PATH_32 := $(TARGET_OUT_VENDOR)/lib
+#LOCAL_MODULE_PATH_64 := $(TARGET_OUT_VENDOR)/lib64
+#include $(BUILD_SHARED_LIBRARY)
